@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar Sesión</title>
+</head>
+<body>
+
+<div id="login-form">
+  <label for="tarjeta-identidad">Tarjeta de Identidad:</label>
+  <input type="text" id="tarjeta-identidad"><br><br>
+  <label for="rol">Rol:</label>
+  <select id="rol">
+    <option value="coordinador">Coordinador</option>
+    <option value="trainer">Trainer</option>
+  </select><br><br>
+  <button onclick="iniciarSesion()">Iniciar Sesión</button>
+</div>
+
+<div id="menu" style="display: none;">
+  <h2 id="welcome-message"></h2>
+  <ul id="options-list"></ul>
+</div>
+
+<script src="./src/script.js">
+
+</script>
+
+</body>
+</html>
