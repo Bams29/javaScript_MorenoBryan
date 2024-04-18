@@ -28,3 +28,18 @@ function pez(raza,genero,color){
 }
 
 const pezOne = new pez('bacalao', 'macho','salmon')
+
+function book(genero,autor,color){
+  this.genero = genero;
+  this.autor = autor;
+  this.color = color;
+}
+
+const bookOne = new book('terror', 'hp lovecraft','salmon')
+
+
+let num = {
+  value: 10,
+  par: true,
+  dig: 2
+}
