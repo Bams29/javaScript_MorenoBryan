@@ -30,7 +30,6 @@ function displayHero(data) {
 
         if (selectedInfo === "powerstats" || selectedInfo === "appearance" || selectedInfo === "biography" || selectedInfo === "work" || selectedInfo === "connections") {
             heroInfo.innerHTML = `<p>${selectedInfo}:</p><ul>`;
-            // Iterar sobre las propiedades del objeto y mostrarlas como lista
             Object.keys(infoToShow).forEach(prop => {
                 heroInfo.innerHTML += `<li>${prop}: ${infoToShow[prop]}</li>`;
             });
