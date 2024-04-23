@@ -41,4 +41,5 @@ function displayHero(data){
         <p>url: ${data.url}
         `
     }
+    
 }
