@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Informacion De Heroe</h1>
+    <label for="heroId">Ingresa el numero que quieres consultar:</label>
+    <input type="number" id="heroId" value="70" min="1" max="731">
+    <button onclick="fetchSuperHero()">Obtener Mi heroe</button>
+    <div id="superHeroInfo">
+        <select id="infoSelector" onchange="displaySelectedInfo()">
+            <option value="name">Nombre</option>
+            <option value="powerstats">Estadísticas de poder</option>
+            <option value="biography">Biografía</option>
+            <option value="appearance">Apariencia</option>
+            <option value="work">Trabajo</option>
+            <option value="connections">Conexiones</option>
+            <option value="image">Imagen</option>
+            <!-- Otras opciones deseadas pueden ser agregadas aquí -->
+        </select>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
