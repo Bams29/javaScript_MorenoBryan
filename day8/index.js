@@ -33,6 +33,12 @@ function displayHero(data){
         <p>Gender: ${data.gender}
         <p>Homeworld: ${data.homeworld}
         <p>Films: ${data.films}
+        <p>Species: ${data.species}
+        <p>Vehicles: ${data.vehicles}
+        <p>Starships: ${data.starships}
+        <p>Created: ${data.created}
+        <p>Edited: ${data.edited}
+        <p>url: ${data.url}
         `
     }
 }
