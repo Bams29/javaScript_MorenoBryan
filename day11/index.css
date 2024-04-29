@@ -40,7 +40,7 @@ main {
     max-width: 425px;
 }
 
-.pokemonImage {
+.pokemon__image {
     position: absolute;
     bottom: 55%;
     left: 50%;
@@ -48,7 +48,7 @@ main {
     height: 18%;
 }
 
-.pokemonData {
+.pokemon__data {
     position: absolute;
     font-weight: 600;
     color: #aaa;
@@ -57,7 +57,7 @@ main {
 font-size: clamp(8px, 5vw, 25px);
 }
 
-.pokemonName {
+.pokemon__name {
     color: #3a444d;
     text-transform: capitalize;
 }
@@ -69,7 +69,7 @@ font-size: clamp(8px, 5vw, 25px);
     left: 13.5%;
 }
 
-.inputSearch {
+.input__search {
     width: 100%;
     padding: 4%;
     outline: none;
