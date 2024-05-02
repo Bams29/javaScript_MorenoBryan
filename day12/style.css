@@ -1,0 +1,56 @@
+[x-cloak] { display: none !important; }
+body {
+  background: url("https://assets.codepen.io/74045/green.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cardArea {
+  width: 100%;
+  text-align: center;
+}
+
+.cardArea h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.cardArea img {
+  max-width:18%;
+  margin: 5px;
+}
+
+#status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 60%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: auto;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+#status p {
+  margin-top: auto; 
+  margin-bottom: auto;
+}
+
+/*aqui para abajo el pop ip*/
+
+.rules {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px; /* Ancho del div */
+    height: 120px; /* Altura del div */
+    background-color: rgba(6, 79, 34, 0.8); /* Color de fondo con transparencia */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    overflow: auto; /* Barra de desplazamiento si el contenido excede el tamaño */
+    font-size: 1.1em; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+</head>
+<script src="https://unpkg.com/alpinejs@3.1.x/dist/cdn.min.js" defer></script>
+
+<div x-data="app" x-cloak>
+    <div id="pcArea" class="cardArea">
+    <h3>Dealer</h3>
+    <template x-for="card in pcCards">
+        
+        <img :src="card.showback?BACK_CARD:card.image" :title="card.showback?'':card.title">
+    </template>
+    </div>
+    <div id="playerArea" class="cardArea">
+        <h3>Player</h3>
+        <template x-for="card in playerCards">
+        <img :src="card.image" :title="card.title">
+    </template>
+    </div>
+    <div id="status">
+    <template x-if="playerTurn">
+        <p>
+        What do you do?
+        <button @click="hitMe" :disabled="hitMeDisabled">Hit Me!</button>
+        <button @click="stay">Stay</button>
+        </p>
+    </template>
+    <template x-if="pcTurn">
+        <p>
+        <span x-text="pcText"></span>
+        </p>
+    </template>
+    <template x-if="playerBusted">
+        <p>
+            You busted!
+            <button @click="newGame">New Game</button>
+        </p>
+    </template>
+    <template x-if="pcBusted">
+        <p>
+        Dealer busted - you win!
+        <button @click="newGame">New Game</button>
+        </p>
+    </template>
+    <template x-if="pcWon">
+        <p>
+        Dealer won.
+        <button @click="newGame">New Game</button>
+        </p>
+    </template>
+    <template x-if="playerWon">
+        <p>
+        You won!
+        <button @click="newGame">New Game</button>
+        </p>
+    </template>
+    </div>
+</div>
+
+<div class="rules">
+    <p>- try to get close to 21 as possible without going over</p>
+    <p>- No betting, just one hand at a time</p>
+    <p>- No doubling down or splitting.</p>
+    <p>- No doubling down or splitting.</p>
+    <p>- The game uses six decks</p>
+</div>
+
+<script src="./fake.js"></script>
+</html>
