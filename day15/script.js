@@ -24,3 +24,5 @@ const crearUsuario = async () => {
 }
 
 document.addEventListener('DOMContentLoaded', crearUsuario);
+
+//*soy estupido*//
