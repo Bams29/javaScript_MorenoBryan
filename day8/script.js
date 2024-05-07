@@ -6,11 +6,6 @@ function fetchStarWars() {
             const starWarInfo = document.getElementById('starWarInfo');
             starWarInfo.innerHTML = `
             <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Information</th>
-                    </tr>
                 </thead>
                 <tbody>
                     <tr>

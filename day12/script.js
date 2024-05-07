@@ -146,7 +146,3 @@ async function delay(x) {
     setTimeout(() => resolve(), x);
   });
 }
-
-//pop up
-
-
