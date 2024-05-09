@@ -1,0 +1,28 @@
+.card{
+    justify-content: center;
+    border: double;
+    position: relative;
+    left: 30em;
+    height: 40em;
+    top: 4em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+img{
+    position: relative;
+    left: 9em;
+    width: 200px;
+    border-radius: 9em;
+    border: double;
+
+}
+
+h2{
+    padding-left: 5.5em;
+}
+
+p{
+    padding-left: 5em;
+}
+/*hfdghsdgf*/
+
