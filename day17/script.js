@@ -7,7 +7,7 @@ class RandomUserCard extends HTMLElement {
             <div class="card bg-light mb-6" style="max-width: 32em;">
                 <div class="contenedor">
                     <img id="image" src="" alt="imagen">
-                    <h2>Hi <span id="firstName"></span></h2>
+                    <h2>Hi my mane is <span id="firstName"></span></h2>
                     <div class="datos">
                         <p>Name: <span id="nombre"></span></p>
                         <p>Email: <span id="email"></span></p>
